@@ -1,0 +1,35 @@
+{
+  "name": "brevo-cli",
+  "version": "0.1.0",
+  "description": "CLI for the Brevo (ex-Sendinblue) API: contacts, lists, transactional email & SMS, templates, campaigns, webhooks",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nardjo/brevo-cli.git"
+  },
+  "keywords": [
+    "brevo",
+    "sendinblue",
+    "cli",
+    "email",
+    "sms",
+    "transactional-email",
+    "api2cli"
+  ],
+  "license": "MIT",
+  "bin": {
+    "brevo-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/index.js --target bun",
+    "dev": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "picocolors": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.7.0"
+  }
+}
